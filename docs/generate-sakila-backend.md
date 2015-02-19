@@ -1,4 +1,4 @@
-Create a new advanced application with Giiant...
+Create a new advanced application with Yii3ds Gii...
 
 ```
 composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced advanced
@@ -58,11 +58,11 @@ mkdir common/models/sakila/search
 Finally run the batch:
 
 ```
-./yii giiant-batch \
+./yii yii3ds-gii-batch \
   --modelDb=dbSakila \
   --modelBaseClass=common\\models\\SakilaActiveRecord \
   --modelNamespace=common\\models\\sakila \
   --tables=actor,address,category,city,country,customer,film,film_actor,film_category,film_text,inventory,language,payment,rental,staff,store
 ```
 
-And open `index.php?r=crud/film` to test your fresh Sakila CRUDs generated with Giiant.
+And open `index.php?r=crud/film` to test your fresh Sakila CRUDs generated with Yii3ds.

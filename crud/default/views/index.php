@@ -5,7 +5,7 @@ use yii\helpers\StringHelper;
 
 /**
  * @var yii\web\View $this
- * @var schmunk42\giiant\crud\Generator $generator
+ * @var yii3ds\gii\crud\Generator $generator
  */
 
 $urlParams = $generator->generateUrlParams();
@@ -71,7 +71,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <?= "<?= \n" ?>
             \yii\bootstrap\ButtonDropdown::widget(
                 [
-                    'id'       => 'giiant-relations',
+                    'id'       => 'yii3ds-gii-relations',
                     'encodeLabel' => false,
                     'label'    => '<span class="glyphicon glyphicon-paperclip"></span> ' . <?= $generator->generateString('Relations') ?>,
                     'dropdown' => [
