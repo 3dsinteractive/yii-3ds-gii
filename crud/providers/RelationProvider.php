@@ -1,18 +1,18 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: tobias
- * Date: 14.03.14
- * Time: 10:21
+ * Created by Sublime text 2.
+ * User: untinosz
+ * Date: 19.02.15
+ * Time: 11:55
  */
 
-namespace schmunk42\giiant\crud\providers;
+namespace yii3ds\gii\crud\providers;
 
 use yii\db\ActiveRecord;
 use yii\db\ColumnSchema;
 use yii\helpers\Inflector;
 
-class RelationProvider extends \schmunk42\giiant\base\Provider
+class RelationProvider extends \yii3ds\gii\base\Provider
 {
     /**
      * Formatter for relation form inputs

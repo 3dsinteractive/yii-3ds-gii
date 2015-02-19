@@ -1,14 +1,14 @@
 <?php
 
-namespace schmunk42\giiant\commands;
+namespace yii3ds\gii\commands;
 
-use schmunk42\giiant\crud\Generator;
+use yii3ds\gii\crud\Generator;
 use yii\console\Controller;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
 
 /**
- * @author Tobias Munk <schmunk@usrbin.de>
+ * @author Nopparid Nokpradab <nopparid@3dsinteractive.com>
  */
 class BatchController extends Controller
 {
@@ -164,11 +164,11 @@ class BatchController extends Controller
                 'messageCategory'    => $this->messageCategory,
                 'generateModelClass' => $this->extendedModels,
                 'modelClass'         => isset($this->tableNameMap[$table]) ? $this->tableNameMap[$table] :
-                    Inflector::camelize($table), // TODO: setting is not recognized in giiant
+                    Inflector::camelize($table), // TODO: setting is not recognized in gii
                 'baseClass'          => $this->modelBaseClass,
                 'tableNameMap'       => $this->tableNameMap
             ];
-            $route  = 'gii/giiant-model';
+            $route  = 'gii/3ds-gii-model';
 
             $app  = \Yii::$app;
             $temp = new \yii\console\Application($config);
@@ -200,7 +200,7 @@ class BatchController extends Controller
                 'providerList'        => implode(',', $providers),
                 'skipRelations'       => $this->crudSkipRelations,
             ];
-            $route  = 'gii/giiant-crud';
+            $route  = 'gii/3ds-gii-crud';
             $app    = \Yii::$app;
             $temp   = new \yii\console\Application($config);
             $temp->runAction(ltrim($route, '/'), $params);

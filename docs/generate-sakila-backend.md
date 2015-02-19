@@ -2,7 +2,7 @@ Create a new advanced application with Giiant...
 
 ```
 composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced advanced
-composer.phar require schmunk42/yii2-giiant:dev-master
+composer.phar require yii3ds/yii2-gii:dev-master
 ```
 
 Set it up...

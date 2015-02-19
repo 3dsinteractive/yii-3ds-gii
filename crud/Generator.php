@@ -5,13 +5,13 @@
  * @license   http://www.yiiframework.com/license/
  */
 
-namespace schmunk42\giiant\crud;
+namespace yii3ds\gii\crud;
 
-use schmunk42\giiant\crud\providers\CallbackProvider;
-use schmunk42\giiant\crud\providers\DateTimeProvider;
-use schmunk42\giiant\crud\providers\EditorProvider;
-use schmunk42\giiant\crud\providers\OptsProvider;
-use schmunk42\giiant\crud\providers\RelationProvider;
+use yii3ds\gii\crud\providers\CallbackProvider;
+use yii3ds\gii\crud\providers\DateTimeProvider;
+use yii3ds\gii\crud\providers\EditorProvider;
+use yii3ds\gii\crud\providers\OptsProvider;
+use yii3ds\gii\crud\providers\RelationProvider;
 use Yii;
 use yii\base\Exception;
 use yii\db\ActiveQuery;
@@ -22,7 +22,7 @@ use yii\helpers\Json;
 
 /**
  * This generator generates an extended version of CRUDs.
- * @author Tobais Munk <schmunk@usrbin.de>
+ * @author Nopparid Mokpradab <nopparid@3dsinteractive.com>
  * @since 1.0
  */
 class Generator extends \yii\gii\generators\crud\Generator
@@ -52,7 +52,7 @@ class Generator extends \yii\gii\generators\crud\Generator
 
     public function getName()
     {
-        return 'Giiant CRUD';
+        return 'Yii3DS CRUD';
     }
 
     public function getDescription()
@@ -77,7 +77,7 @@ class Generator extends \yii\gii\generators\crud\Generator
      */
     public function init()
     {
-        \Yii::trace("Initializing giiant CRUD generator for model '{$this->modelClass}'", __METHOD__);
+        \Yii::trace("Initializing yii3ds-gii CRUD generator for model '{$this->modelClass}'", __METHOD__);
         parent::init();
     }
 

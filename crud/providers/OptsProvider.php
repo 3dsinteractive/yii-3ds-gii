@@ -1,14 +1,14 @@
 <?php
-namespace schmunk42\giiant\crud\providers;
+namespace yii3ds\gii\crud\providers;
 
 use yii\db\ColumnSchema;
 
 /**
  * Class OptsProvider
- * @package schmunk42\giiant\crud\providers
- * @author Christopher Stebe <c.stebe@herzogkommunikation.de>
+ * @package yii3ds\gii\crud\providers
+ * @author Nopparid Mokpradab <nopparid@3dsinteractive.com>
  */
-class OptsProvider extends \schmunk42\giiant\base\Provider
+class OptsProvider extends \yii3ds\gii\base\Provider
 {
     public function activeField(ColumnSchema $attribute)
     {

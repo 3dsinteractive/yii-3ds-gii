@@ -1,11 +1,11 @@
 <?php
 /**
  * @link http://www.phundament.com
- * @copyright Copyright (c) 2014 herzog kommunikation GmbH
+ * @copyright Copyright (c) 2015 3ds Interactive Co., Ltd.
  * @license http://www.phundament.com/license/
  */
 
-namespace schmunk42\giiant\model;
+namespace yii3ds\gii\model;
 
 use yii\gii\CodeFile;
 use yii\helpers\Inflector;
@@ -14,7 +14,7 @@ use Yii;
 /**
  * This generator will generate one or multiple ActiveRecord classes for the specified database table.
  *
- * @author Tobias Munk <schmunk@usrbin.de>
+ * @author Tobias Munk <nopparid@3dsinteractive.com>
  * @since 0.0.1
  */
 class Generator extends \yii\gii\generators\model\Generator
@@ -40,7 +40,7 @@ class Generator extends \yii\gii\generators\model\Generator
      */
     public function getName()
     {
-        return 'Giiant Model';
+        return 'Yii3ds Gii Model';
     }
 
     /**

@@ -1,14 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: tobias
- * Date: 19.03.14
- * Time: 01:01
+ * Created by Sublime Text 2.
+ * User: untinosz
+ * Date: 19.02.15
+ * Time: 11:40
  */
 
-namespace schmunk42\giiant\crud\providers;
+namespace yii3ds\gii\crud\providers;
 
-class CallbackProvider extends \schmunk42\giiant\base\Provider
+class CallbackProvider extends \yii3ds\gii\base\Provider
 {
     public $activeFields = [];
     public $prependActiveFields = [];

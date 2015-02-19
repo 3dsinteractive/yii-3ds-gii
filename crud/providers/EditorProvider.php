@@ -1,16 +1,16 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: tobias
- * Date: 14.03.14
- * Time: 10:21
+ * Created by Sublime Text 2.
+ * User: untinosz
+ * Date: 19.02.15
+ * Time: 11:50
  */
 
-namespace schmunk42\giiant\crud\providers;
+namespace yii3ds\gii\crud\providers;
 
 use yii\db\ColumnSchema;
 
-class EditorProvider extends \schmunk42\giiant\base\Provider
+class EditorProvider extends \yii3ds\gii\base\Provider
 {
     public function activeField(ColumnSchema $attribute)
     {
