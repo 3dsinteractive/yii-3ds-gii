@@ -1,0 +1,21 @@
+{
+    "name": "yii3ds/yii2-3ds-gii",
+    "description": "Code Generator",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "ton3ds",
+            "email": "nopparid@3dsinteractive.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii3ds\\gii\\": ""
+        }
+    }
+}
