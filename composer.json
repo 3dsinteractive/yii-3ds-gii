@@ -17,5 +17,9 @@
         "psr-4": {
             "yii3ds\\gii\\": ""
         }
+    },
+    "extra": {
+        "bootstrap": "yii3ds\\gii\\Bootstrap"
     }
+
 }

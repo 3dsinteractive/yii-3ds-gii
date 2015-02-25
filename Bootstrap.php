@@ -36,6 +36,10 @@ class Bootstrap implements BootstrapInterface
             if (!isset($app->getModule('gii')->generators['yii3ds-gii-crud'])) {
                 $app->getModule('gii')->generators['yii3ds-gii-crud'] = 'yii3ds\gii\crud\Generator';
             }
+            if (!isset($app->getModule('gii')->generators['yii3ds-gii-extension'])) {
+                $app->getModule('gii')->generators['yii3ds-gii-extension'] = 'yii3ds\gii\extension\Generator';
+            }
+
             if ($app instanceof \yii\console\Application) {
                 $app->controllerMap['yii3ds-gii-batch'] = 'yii3ds\gii\commands\BatchController';
             }
